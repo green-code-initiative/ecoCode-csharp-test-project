@@ -14,7 +14,7 @@ env:
   DOTNET_NOLOGO: true
 
 jobs:
-  build-and-test:
+  build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
