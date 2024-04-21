@@ -5,7 +5,7 @@
 		<Company>Green Code Initiative</Company>
 		<Description>A project that contains code with warnings that should be raised by the EcoCode analyzers.</Description>
 		<Copyright>Copyright EcoCode © 2024</Copyright>
-		
+
 		<TargetFramework>net8.0</TargetFramework>
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
