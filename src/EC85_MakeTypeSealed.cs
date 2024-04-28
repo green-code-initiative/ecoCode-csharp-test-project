@@ -2,6 +2,21 @@
 
 internal static class EC85_MakeTypeSealed
 {
+    public class TestA; // EC85: make type sealed
+    internal class TestB; // EC85: make type sealed
+    public static class Test0
+    {
+        public class Test01; // EC85: make type sealed
+        internal class Test02; // EC85: make type sealed
+        private class Test03; // EC85: make type sealed
+    }
+    internal static class Test1
+    {
+        public class Test11; // EC85: make type sealed
+        internal class Test12; // EC85: make type sealed
+        private class Test13; // EC85: make type sealed
+    }
+
     public static class SealableClasses
     {
         public class TestA; // EC85: make type sealed
@@ -199,15 +214,18 @@ internal static class EC85_MakeTypeSealed
     public static class Partial
     {
         public partial class Test1; // EC85: make type sealed
-        partial class Test1 { private readonly int Value; public int Method() => Value; }
+        partial class Test1(int Value) { public int Method() => Value; }
 
-        partial class Test2 { private readonly int Value; public int Method() => Value; }
-        public partial class Test2; // EC85: make type sealed
+        partial record Test2(int Value)
+        {
+            public int Method() => Value;
+        }
+        public partial record Test2; // EC85: make type sealed
 
         public partial class Test3;
         partial class Test3 { public virtual void Method() { } }
 
         public partial class Test4;
-        sealed partial class Test4 { private readonly int Value; public int Method() => Value; }
+        sealed partial class Test4(int Value) { public int Method() => Value; }
     }
 }
