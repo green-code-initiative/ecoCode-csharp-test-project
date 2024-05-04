@@ -30,7 +30,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="EcoCode" Version="1.0.6-beta3" PrivateAssets="all">
+	  <PackageReference Include="EcoCode" Version="1.0.6" PrivateAssets="all">
 	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 	  </PackageReference>
 	</ItemGroup>
