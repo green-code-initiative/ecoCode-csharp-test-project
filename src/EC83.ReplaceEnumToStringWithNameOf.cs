@@ -1,6 +1,6 @@
 ﻿namespace EcoCode.LiveWarnings;
 
-internal static class EC83_ReplaceEnumToStringWithNameOf
+internal static class ReplaceEnumToStringWithNameOf
 {
     private enum MyEnum { A, B, C, D }
 

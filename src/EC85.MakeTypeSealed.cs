@@ -1,6 +1,8 @@
 ﻿namespace EcoCode.LiveWarnings;
 
-internal static class EC85_MakeTypeSealed
+// Because EC85 is a compiler warning, it will only appear in the error list after a compilation, but not in the editor.
+
+internal static class MakeTypeSealed
 {
     public class TestA; // EC85: make type sealed
     internal class TestB; // EC85: make type sealed
