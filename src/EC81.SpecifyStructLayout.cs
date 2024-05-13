@@ -2,7 +2,7 @@
 
 namespace EcoCode.LiveWarnings;
 
-internal static class EC81_SpecifyStructLayout
+internal static class SpecifyStructLayout
 {
     public readonly record struct TestStruct1;
 

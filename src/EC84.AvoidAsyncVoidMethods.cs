@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace EcoCode.LiveWarnings;
 
-internal static class EC84_AvoidAsyncVoidMethods
+internal static class AvoidAsyncVoidMethods
 {
     public static async void Method1() => // EC84, code fix: public static async Task Method1()
         await Task.Delay(1000).ConfigureAwait(false);

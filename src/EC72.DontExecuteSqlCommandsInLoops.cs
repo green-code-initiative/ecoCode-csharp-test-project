@@ -2,7 +2,7 @@
 
 namespace EcoCode.LiveWarnings;
 
-internal static class EC72_DontExecuteSqlCommandsInLoops
+internal static class DontExecuteSqlCommandsInLoops
 {
     public static void Run()
     {

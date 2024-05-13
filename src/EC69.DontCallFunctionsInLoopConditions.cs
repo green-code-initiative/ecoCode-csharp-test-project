@@ -1,6 +1,6 @@
 ﻿namespace EcoCode.LiveWarnings;
 
-internal static class EC69_DontCallFunctionsInLoopConditions
+internal static class DontCallFunctionsInLoopConditions
 {
     private const int C = 10;
     private static int V1 => 10;

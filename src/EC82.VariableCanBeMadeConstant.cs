@@ -1,6 +1,6 @@
 ﻿namespace EcoCode.LiveWarnings;
 
-internal static class EC82_VariableCanBeMadeConstant
+internal static class VariableCanBeMadeConstant
 {
     public static void Run()
     {

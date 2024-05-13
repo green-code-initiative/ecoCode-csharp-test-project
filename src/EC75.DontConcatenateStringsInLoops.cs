@@ -1,6 +1,6 @@
 ﻿namespace EcoCode.LiveWarnings;
 
-internal static class EC75_DontConcatenateStringsInLoops
+internal static class DontConcatenateStringsInLoops
 {
     private static string s1 = string.Empty;
     private static string s2 = string.Empty;
