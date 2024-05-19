@@ -21,18 +21,18 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Remove=".gitattributes" />
-	  <None Remove=".gitignore" />
-	  <None Remove="global.json" />
-	  <None Remove="LICENCE.md" />
-	  <None Remove="NuGet.Config" />
-	  <None Remove="README.md" />
+		<None Remove=".gitattributes" />
+		<None Remove=".gitignore" />
+		<None Remove="global.json" />
+		<None Remove="LICENCE.md" />
+		<None Remove="NuGet.Config" />
+		<None Remove="README.md" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="EcoCode" Version="1.0.8" PrivateAssets="all">
-	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-	  </PackageReference>
+		<PackageReference Include="EcoCode" Version="1.1.0" PrivateAssets="all">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
 	</ItemGroup>
 
 </Project>
