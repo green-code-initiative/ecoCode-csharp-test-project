@@ -4,7 +4,7 @@ internal static class AvoidZeroLengthArrayAllocations
 {
     public static void Run()
     {
-        int[] anZeroLengthArray = new int[0];
+        int[] anZeroLengthArray = new int[0]; // CA1825
         Console.WriteLine(anZeroLengthArray.Length);
     }
 }
