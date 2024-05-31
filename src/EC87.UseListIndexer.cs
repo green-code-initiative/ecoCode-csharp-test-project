@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-
-namespace EcoCode.LiveWarnings;
+﻿namespace EcoCode.LiveWarnings;
 
 internal static class UseListIndexer
 {
