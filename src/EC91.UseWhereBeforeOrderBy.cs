@@ -1,6 +1,6 @@
 ﻿namespace EcoCode.LiveWarnings;
 
-internal static class WithLinqUseWhereBeforeOrderby
+internal static class UseWhereBeforeOrderBy
 {
     public static void Test1()
     {
@@ -10,6 +10,7 @@ internal static class WithLinqUseWhereBeforeOrderby
             .Where(x => x > 10) // EC91
             .Select(x => x);
     }
+
     public static void Test2()
     {
         var items = new List<int>();
@@ -23,8 +24,8 @@ internal static class WithLinqUseWhereBeforeOrderby
     {
         var items = new List<int>();
         var query = from item in items
-                    orderby item // EC91
-                    where item > 10
+                    orderby item
+                    where item > 10 // EC91
                     select item;
     }
 
@@ -32,8 +33,8 @@ internal static class WithLinqUseWhereBeforeOrderby
     {
         var items = new List<int>();
         var query = from item in items
-                    orderby item descending // EC91
-                    where item > 10
+                    orderby item descending
+                    where item > 10 // EC91
                     select item;
     }
 }
