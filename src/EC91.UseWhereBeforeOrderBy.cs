@@ -24,8 +24,8 @@ internal static class UseWhereBeforeOrderBy
     {
         var items = new List<int>();
         var query = from item in items
-                    orderby item // EC91
-                    where item > 10
+                    orderby item
+                    where item > 10 // EC91
                     select item;
     }
 
@@ -33,8 +33,8 @@ internal static class UseWhereBeforeOrderBy
     {
         var items = new List<int>();
         var query = from item in items
-                    orderby item descending // EC91
-                    where item > 10
+                    orderby item descending
+                    where item > 10 // EC91
                     select item;
     }
 }
