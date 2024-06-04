@@ -1,5 +1,3 @@
-using System.Linq;
-
 namespace EcoCode.LiveWarnings;
 
 internal static class DoNotUseCountWhenAnyCanBeUsed
