@@ -31,7 +31,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="EcoCode" Version="1.3.0-beta3" PrivateAssets="all">
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<ExcludeAssets>compile; runtime</ExcludeAssets>
 		</PackageReference>
 	</ItemGroup>
 

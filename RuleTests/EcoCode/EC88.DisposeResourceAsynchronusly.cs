@@ -1,4 +1,4 @@
-﻿namespace EcoCode.LiveWarnings;
+﻿namespace RuleTests.EcoCode;
 
 [SuppressMessage("Reliability", "CA2000:Dispose objects before losing scope", Justification = "Valid warning but we don't need it here")]
 internal static class DisposeResourceAsynchronusly
