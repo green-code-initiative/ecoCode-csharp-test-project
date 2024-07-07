@@ -25,7 +25,7 @@ internal static class ReturnTaskDirectly
     }
 
     public static async Task WarnOnSingleAwaitExpressionAsync() => // EC93
-                                                                   // Comment
+        // Comment
         await Task.Delay(0).ConfigureAwait(false);
 
     public static async Task WarnOnSingleAwaitBody1Async() // EC93
