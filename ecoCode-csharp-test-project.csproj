@@ -10,8 +10,7 @@
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
 
-		<AnalysisMode>all</AnalysisMode>
-		<EnableNETAnalyzers>True</EnableNETAnalyzers>
+		<!--<AnalysisMode>all</AnalysisMode>-->
 		<RunAnalyzersDuringBuild>True</RunAnalyzersDuringBuild>
 
 		<Version>1.0.0</Version>
@@ -19,20 +18,5 @@
 		<FileVersion>$(Version)</FileVersion>
 		<AssemblyInformationalVersion>$(Version)</AssemblyInformationalVersion>
 	</PropertyGroup>
-
-	<ItemGroup>
-		<None Remove=".gitattributes" />
-		<None Remove=".gitignore" />
-		<None Remove="global.json" />
-		<None Remove="LICENCE.md" />
-		<None Remove="NuGet.Config" />
-		<None Remove="README.md" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<PackageReference Include="EcoCode" Version="1.4.0" PrivateAssets="all">
-			<ExcludeAssets>compile; runtime</ExcludeAssets>
-		</PackageReference>
-	</ItemGroup>
 
 </Project>

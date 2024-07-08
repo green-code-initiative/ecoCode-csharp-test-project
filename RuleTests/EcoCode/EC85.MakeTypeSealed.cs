@@ -1,6 +1,8 @@
 ﻿namespace RuleTests.EcoCode;
 
-// Because EC85 is a compiler warning, it will only appear in the error list after a compilation, but not in the editor.
+// Because EC85 is a compiler warning, it can't appear live in the editor.
+// It can appear in the Error List after a compilation or after using 'Run Code Analysis',
+// but only if the option '<AnalysisMode>all</AnalysisMode>' is set in the .csproj file.
 
 internal static class MakeTypeSealed
 {
