@@ -1,6 +1,8 @@
-﻿namespace EcoCode.LiveWarnings;
+﻿namespace RuleTests.EcoCode;
 
-// Because EC85 is a compiler warning, it will only appear in the error list after a compilation, but not in the editor.
+// Because EC85 is a compiler warning, it can't appear live in the editor.
+// It can appear in the Error List after a compilation or after using 'Run Code Analysis',
+// but only if the option '<AnalysisMode>all</AnalysisMode>' is set in the .csproj file.
 
 internal static class MakeTypeSealed
 {
@@ -165,7 +167,7 @@ internal static class MakeTypeSealed
             public class TestA3 { protected virtual void Method() { } }
             public class TestA4 { protected internal virtual void Method() { } } // EC85: make type sealed
             public class TestA5 { private protected virtual void Method() { } } // EC85: make type sealed
-        
+
             internal class TestB1 { public virtual void Method() { } } // EC85: make type sealed
             internal class TestB2 { internal virtual void Method() { } } // EC85: make type sealed
             internal class TestB3 { protected virtual void Method() { } } // EC85: make type sealed
@@ -186,13 +188,13 @@ internal static class MakeTypeSealed
             public class TestA3 { protected virtual void Method() { } } // EC85: make type sealed
             public class TestA4 { protected internal virtual void Method() { } } // EC85: make type sealed
             public class TestA5 { private protected virtual void Method() { } } // EC85: make type sealed
-        
+
             internal class TestB1 { public virtual void Method() { } } // EC85: make type sealed
             internal class TestB2 { internal virtual void Method() { } } // EC85: make type sealed
             internal class TestB3 { protected virtual void Method() { } } // EC85: make type sealed
             internal class TestB4 { protected internal virtual void Method() { } } // EC85: make type sealed
             internal class TestB5 { private protected virtual void Method() { } } // EC85: make type sealed
-        
+
             private class TestC1 { public virtual void Method() { } } // EC85: make type sealed
             private class TestC2 { internal virtual void Method() { } } // EC85: make type sealed
             private class TestC3 { protected virtual void Method() { } } // EC85: make type sealed

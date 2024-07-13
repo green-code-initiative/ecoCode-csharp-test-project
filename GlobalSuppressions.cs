@@ -7,16 +7,16 @@
     "CA1812:Avoid uninstantiated internal classes",
     Justification = "Unneeded spam",
     Scope = "namespaceanddescendants",
-    Target = "~N:EcoCode.LiveWarnings")]
+    Target = "~N:RuleTests")]
 
 [assembly: SuppressMessage("Performance",
     "CA1852:Seal internal types",
     Justification = "Unneeded spam",
     Scope = "namespaceanddescendants",
-    Target = "~N:EcoCode.LiveWarnings")]
+    Target = "~N:RuleTests")]
 
 [assembly: SuppressMessage("Globalization",
     "CA1303:Do not pass literals as localized parameters",
     Justification = "Unneeded spam",
     Scope = "namespaceanddescendants",
-    Target = "~N:EcoCode.LiveWarnings")]
+    Target = "~N:RuleTests")]

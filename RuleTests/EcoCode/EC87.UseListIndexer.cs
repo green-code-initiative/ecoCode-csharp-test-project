@@ -1,4 +1,4 @@
-﻿namespace EcoCode.LiveWarnings;
+﻿namespace RuleTests.EcoCode;
 
 internal static class UseListIndexer
 {

@@ -1,6 +1,6 @@
 ﻿using System.Data;
 
-namespace EcoCode.LiveWarnings;
+namespace RuleTests.EcoCode;
 
 internal static class DontExecuteSqlCommandsInLoops
 {

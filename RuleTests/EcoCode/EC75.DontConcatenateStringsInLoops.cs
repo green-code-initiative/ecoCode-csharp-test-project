@@ -1,6 +1,6 @@
 ﻿using System.Collections.Immutable;
 
-namespace EcoCode.LiveWarnings;
+namespace RuleTests.EcoCode;
 
 internal static class DontConcatenateStringsInLoops
 {

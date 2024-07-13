@@ -1,20 +1,8 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecoCode-csharp-test-project", "ecoCode-csharp-test-project.csproj", "{6AAA1AD9-DC43-4F33-898A-663C42B06DCA}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0A894299-879E-459D-A0C0-2B25AD5EBD0D}"
-	ProjectSection(SolutionItems) = preProject
-		.gitattributes = .gitattributes
-		.gitignore = .gitignore
-		.github\workflows\build.yml = .github\workflows\build.yml
-		global.json = global.json
-		LICENCE.md = LICENCE.md
-		NuGet.Config = NuGet.Config
-		README.md = README.md
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +12,17 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6AAA1AD9-DC43-4F33-898A-663C42B06DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6AAA1AD9-DC43-4F33-898A-663C42B06DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AAA1AD9-DC43-4F33-898A-663C42B06DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AAA1AD9-DC43-4F33-898A-663C42B06DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0DE71DC-90CB-4025-A57B-2F705B187C22}
+	EndGlobalSection
+EndGlobal
+d.0 = Debug|Any CPU
 		{6AAA1AD9-DC43-4F33-898A-663C42B06DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AAA1AD9-DC43-4F33-898A-663C42B06DCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

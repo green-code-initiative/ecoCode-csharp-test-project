@@ -1,4 +1,4 @@
-﻿namespace EcoCode.LiveWarnings;
+﻿namespace RuleTests.EcoCode;
 
 internal static class GCCollectShouldNotBeCalled
 {
@@ -7,8 +7,8 @@ internal static class GCCollectShouldNotBeCalled
         // GC.Collect();
 
         GC.Collect(); // EC86
-        
-        System.GC.Collect(); // EC86
+
+        GC.Collect(); // EC86
 
         GC.Collect(0);
 

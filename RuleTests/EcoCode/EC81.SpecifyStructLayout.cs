@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace EcoCode.LiveWarnings;
+namespace RuleTests.EcoCode;
 
 internal static class SpecifyStructLayout
 {
