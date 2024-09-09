@@ -1,4 +1,6 @@
-﻿namespace RuleTests.EcoCode;
+﻿using System.IO;
+
+namespace RuleTests.EcoCode;
 
 internal static class DontCallFunctionsInLoopConditions
 {
@@ -21,5 +23,9 @@ internal static class DontCallFunctionsInLoopConditions
 
         do j += i++;
         while (i < V1 && i < V2() && i < V3(i) && i < V3(j) && i < V3(k) && i < V3(p) && i < V3(C));
+
+        string? d = Path.GetDirectoryName("toto");
+        while (d != null && !d.Equals(@"S:\", StringComparison.OrdinalIgnoreCase)) // No EC69, d is reassigned in the loop
+            d = Path.GetDirectoryName(d);
     }
 }
